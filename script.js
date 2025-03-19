@@ -5,7 +5,7 @@ let getBooks = function () {
     .then((data) => {
       if (data.ok) {
         console.log("good ending", data);
-        return data.json;
+        return data.json();
       } else {
         throw new error("errore 0");
       }
